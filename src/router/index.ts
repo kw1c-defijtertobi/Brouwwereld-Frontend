@@ -6,10 +6,31 @@ const routes: RouteRecordRaw[] = [
         component: () => import("../views/Home.vue"),
     },
     {    
-        path: "/products",
-        name: "Products",
+        path: "/over-ons",
+        name: "Over ons",
+        component: () => import("../views/Overons.vue"),
+    },
+    {    
+        path: "/producten",
+        name: "Producten",
         component: () => import("../views/Products.vue"),
-    }
+    },
+    {    
+        path: "/nieuws",
+        name: "Nieuws",
+        component: () => import("../views/Nieuws.vue"),
+    },
+    {    
+        path: "/contact",
+        name: "Contact",
+        component: () => import("../views/Contact.vue"),
+    },
+    {    
+        path: "/winkelwagen",
+        name: "Winkelwagen",
+        component: () => import("../views/Winkelwagen.vue"),
+    },
+
 ]
 
 export default createRouter({

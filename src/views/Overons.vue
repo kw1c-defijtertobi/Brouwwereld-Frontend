@@ -1,3 +1,3 @@
 <template>
-    <h1>Products</h1>
+    <h1>Over ons</h1>
 </template>

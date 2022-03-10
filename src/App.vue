@@ -1,5 +1,7 @@
 <template>
-  <Navigation />
+  <div class="backgroundcolor">
+      <Navigation />
+  </div>
   <main>
     <router-view></router-view>
   </main>
@@ -11,6 +13,7 @@
 
 
 <style lang="scss">
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
 @import "./styles/variables.scss";
 
   * {
@@ -18,6 +21,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: $fontfamily;
+  }
+  
+  .backgroundcolor
+  {
+    background-color: $backgroundcolor;
   }
 
   nav,

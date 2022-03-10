@@ -15,20 +15,17 @@
 <style lang="scss">
     @import "../styles/variables.scss";
 
-
-
     .homecontainer {
-    width: 100%;
+    margin: 0 auto;
     background-color: $backgroundcolor;
     display: flex;
-        .hometext{
-            
+    align-items: center;
+    padding: 0.5rem 0 2rem 0;
+    justify-content: center;
+        .hometext, .slidercontainer{
+           margin: 0 2rem 0 2rem; 
         }
-        .slidercontainer
-        {
-
-        }
-
+        
         h1{
             width: 32rem;
             font-family: 'Montserrat', sans-serif;
@@ -40,7 +37,7 @@
             }
         }
         img{
-            width: 50%;
+            width: 35rem;
         }
     }
 </style>

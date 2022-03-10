@@ -22,7 +22,7 @@
     box-sizing: border-box;
     font-family: $fontfamily;
   }
-  
+
   .backgroundcolor
   {
     background-color: $backgroundcolor;
@@ -30,7 +30,7 @@
 
   nav,
   section {
-    max-width: 92rem;
+    max-width: 80rem;
     margin: 0 auto;
     padding: 0 1rem;
   }

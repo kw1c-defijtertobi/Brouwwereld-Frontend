@@ -11,8 +11,10 @@
 </template>
 
 <style lang="scss">
+@import "../styles/variables.scss";
     p{
         font-family: $fontfamily-smalltext;
-        font-weight: 200;
+        font-weight: 500;
+
     }
 </style>

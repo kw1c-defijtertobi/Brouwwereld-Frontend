@@ -23,8 +23,17 @@
             <img src="/assets/slider1.jpg">
         </div>
     </div>
+
+
     <div class="news">
-        <img src="/assets/news1.png">
+        <div class="newscontainer">
+            <img src="/assets/news1.png">
+            <div class="text-block">
+                <h4>Korting op kratten</h4>
+                <p>14 maart</p>
+            </div>
+        </div>
+        
         <img src="/assets/news2.png">
         <img src="/assets/news3.png">
         <img src="/assets/news4.png">
@@ -61,7 +70,7 @@
 
     .news
     {
-        margin: 30px 0 30px 0;
+        margin: 30px 0 80px 0;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 30px;
@@ -69,8 +78,27 @@
         
         img{
             width: 100%;
-            
+            border-radius: 0.5rem;
         }
+        
+        .newscontainer
+        {
+            position: relative;
+        }
+
+        .text-block {
+            position: absolute;
+            width: 100%;
+            height: 50px;
+            top: 96%;
+            background-color: white;
+            color: black;
+            padding: 10px 0 0 10px;
+            background-color: rgb(235,233,230);
+            border-bottom-left-radius: 0.5rem;
+            border-bottom-right-radius: 0.5rem;
+        }
+        
     }
 
     

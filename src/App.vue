@@ -5,12 +5,15 @@
   <main>
     <router-view></router-view>
   </main>
+  <div class="backgroundcolor">
+      <Footer />
+  </div>
 </template>
 
 <script setup lang="ts">
   import Navigation from "./components/Navigation.vue";
+  import Footer from "./components/Footer.vue";
 </script>
-
 
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
@@ -27,17 +30,4 @@
   {
     background-color: $backgroundcolor;
   }
-
-  nav,
-  section {
-    max-width: 80rem;
-    margin: 0 auto;
-    padding: 0 1rem;
-  }
-  
-  a {
-    text-decoration: none;
-    color: $text-color;
-  }
-
 </style>

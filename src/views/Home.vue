@@ -9,8 +9,8 @@
             </div>
         </div>
         <div class="newstitle">
-                <h2>Nieuws</h2>
-            </div>
+            <h2>Nieuws</h2>
+        </div>
         <div class="news">
             <div class="newscontainer">
                 <img src="/assets/news1.png">

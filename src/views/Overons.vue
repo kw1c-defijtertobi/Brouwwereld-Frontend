@@ -1,6 +1,8 @@
 <template>
     <main>
-        <h1>Over ons</h1>
+        <div class="title">
+            <h1>Over ons</h1>
+        </div>
         <div class="flex">
             <div class="overons-text">
                 <p>
@@ -23,11 +25,14 @@
 <style lang="scss">
 @import "../styles/variables.scss";
     main{
-        h1{
+        .title{
+            h1{
             text-align: center;
             color: $text-color;
             margin: 1.5rem;
+            }
         }
+        
         .flex{
             display: flex;
             margin: 0 auto;

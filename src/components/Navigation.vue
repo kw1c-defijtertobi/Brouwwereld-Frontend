@@ -21,6 +21,7 @@
 <style lang="scss">
 @import "../styles/variables.scss";
   nav {
+  font-family: $fontfamily;
   height: 7rem;
   display: flex;
   justify-content: space-between;

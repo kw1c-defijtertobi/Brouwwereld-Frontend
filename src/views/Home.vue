@@ -47,7 +47,7 @@
 
 .newstitle{
     h2{
-        font-family: 'Montserrat', sans-serif;
+        font-family: $fontfamily-bigtext;
         text-align: center;
         font-size: 3rem;
         color: $text-color; 
@@ -83,6 +83,7 @@
 
 .news
 {
+    font-family: $fontfamily;
     margin: 1.5rem 0 5rem 0;
     display: grid;
     grid-template-columns: repeat(4, 1fr);

@@ -13,6 +13,7 @@
 <style lang="scss">
 @import "../styles/variables.scss";
     footer {
+    font-family: $fontfamily;
     height: 4rem;
     display: flex;
     justify-content: space-between;

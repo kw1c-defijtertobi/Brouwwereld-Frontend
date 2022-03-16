@@ -1,5 +1,8 @@
 <template>
-    <h1>Nieuws</h1>
+    <div class="title">
+        <h1>Nieuws</h1>
+    </div>
+    
     <div class="newscontainer">
         <div class="newsobject">
             <img src="\assets\news1.png" alt="news1">
@@ -18,34 +21,111 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="newsobject">
+            <img src="\assets\news2.png" alt="news2">
+            <div class="newsflex">
+                <div class="newstextblock">
+                    <h2>
+                        Bieraanbiedingen van deze week
+                    </h2>
+                    <p>
+                        Alle actuele bier aanbiedingen van supermarkten, slijterijen, groothandels en webwinkels. Op dit moment is er 612 keer een bier aanbieding.
+                    </p>
+                </div>
+                <div class="buttonblock">
+                    <div class="button">
+                        <p>Lees meer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="newsobject">
+            <img src="\assets\news3.png" alt="news3">
+            <div class="newsflex">
+                <div class="newstextblock">
+                    <h2>
+                        Heineken Silver geïntroduceerd in Nederland
+                    </h2>
+                    <p>
+                        Heineken Silver is vandaag gelanceerd in Nederland. Het nieuwe pils is een extra verfrissende nieuwe toevoeging aan de Heineken familie.
+                    </p>
+                </div>
+                <div class="buttonblock">
+                    <div class="button">
+                        <p>Lees meer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="newsobject">
+            <img src="\assets\news4.png" alt="news4">
+            <div class="newsflex">
+                <div class="newstextblock">
+                    <h2>
+                        Bieraanbiedingen van deze week
+                    </h2>
+                    <p>
+                        Alle actuele bier aanbiedingen van supermarkten, slijterijen, groothandels en webwinkels. Op dit moment is er 612 keer een bier aanbieding.
+                    </p>
+                </div>
+                <div class="buttonblock">
+                    <div class="button">
+                        <p>Lees meer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="newsobject">
+            <img src="\assets\news6.png" alt="news6">
+            <div class="newsflex">
+                <div class="newstextblock">
+                    <h2>
+                        Alcoholvrije Corona variant gelanceerd in Nederland
+                    </h2>
+                    <p>
+                        AB InBev heeft een alcoholvrije variant van het wereldberoemde Corona bier op de markt gebracht in Nederland. Dit bier draagt de naam Corona Cero.
+                    </p>
+                </div>
+                <div class="buttonblock">
+                    <div class="button">
+                        <p>Lees meer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="newsobject">
+            <img src="\assets\news5.png" alt="news5">
+            <div class="newsflex">
+                <div class="newstextblock">
+                    <h2>
+                        Bieraanbiedingen van deze week
+                    </h2>
+                    <p>
+                        Alle actuele bier aanbiedingen van supermarkten, slijterijen, groothandels en webwinkels. Op dit moment is er 612 keer een bier aanbieding.
+                    </p>
+                </div>
+                <div class="buttonblock">
+                    <div class="button">
+                        <p>Lees meer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
         
         
-        </div>
-        <div class="newsobject">
-            <img src="\assets\news2.png" alt="news1">
-        </div>
-        <div class="newsobject">
-            <img src="\assets\news3.png" alt="news1">
-        </div>  
-        <div class="newsobject">
-            <img src="\assets\news4.png" alt="news1">
-        </div>
-        <div class="newsobject">
-            <img src="\assets\news5.png" alt="news1">
-        </div>
-        <div class="newsobject">
-            <img src="\assets\news6.png" alt="news1">
-        </div>
     </div>
 </template>
 
 <style lang="scss">
 @import "../styles/variables.scss";
-    h1 {
-        font-family: $fontfamily-bigtext;
-        text-align: center;
-        margin: 1rem 0 1rem 0;
-    }
+    .title {
+        h1 {
+            font-family: $fontfamily-bigtext;
+            text-align: center;
+            margin: 2rem 0 2rem 0;
+        }
+    }   
 
     .newscontainer{
         display: flex;
@@ -61,32 +141,29 @@
                     border-radius: 0.5rem;
                 }
             .newsflex{
-                display: flex;
+                margin-left: 1rem;
                 .newstextblock {
-                    flex: 80%;
-                    margin-left: 1rem;
                     h2 {
-                    font-weight: 500;
+                        font-weight: 500;
                     }
                     p {
                         font-weight: 300;
+                        margin-top: 0.5rem;
                     }
                 }
                 .buttonblock {
-                    flex: 20%;
                     .button {
+                        margin-top: 1rem;
                         position: relative;
                         color: white;
                         width: 8rem;
                         height: 2rem;
                         background-color: rgb(207,132,48);
                         border-radius: 0.2rem;
+                        
                         p {
                             text-align: center;
                             line-height: 2rem;
-                            
-                            
-                            
                         }
                     }
                 }

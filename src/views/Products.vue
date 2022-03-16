@@ -202,7 +202,6 @@
         width: 20%;
         padding-left: 3rem;
         padding-top: 2rem;
-        // background-color: red;
         h2 {
             font-size: 3.2rem; 
         }
@@ -243,8 +242,6 @@
         .product {
             height: 20rem;
             width: 17rem;
-            // background-color: grey;
-            
             img {   
                 width: 4rem;  
                 height: 13.5rem;
@@ -257,20 +254,8 @@
                 display: flex;
                 align-items: center;
                 .cart {
-                    flex: 20%;
-                    display: flex;
-                    margin-right: 1rem;
-                    width: 3rem;
-                    height: 3rem;
-                    background-color: rgb(207,132,48);
-                    align-items: center;
-                    border-radius: 0.2rem;
-                    .cart-logo {
-                        margin: auto;
-                        display: block;
-                    }
+                    display: none;
                 }
-
                 .productinfo{
                     flex: 80%;
                     margin-left: 1rem;
@@ -287,8 +272,22 @@
                     }
                 }
             }
-            
-            
+        }
+        .product:hover{
+            .cart {
+                    flex: 20%;
+                    display: flex;
+                    margin-right: 1rem;
+                    width: 3rem;
+                    height: 3rem;
+                    background-color: rgb(207,132,48);
+                    align-items: center;
+                    border-radius: 0.2rem;
+                    .cart-logo {
+                        margin: auto;
+                        display: block;
+                    }
+                }
         }
     }
 }

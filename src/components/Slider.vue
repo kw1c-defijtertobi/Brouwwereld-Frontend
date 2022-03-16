@@ -9,9 +9,16 @@
 <script>
 export default {
     data: () => ({
-        activeIndex: 2,
+        activeIndex: 0,
         items: ["slider1.jpg", "slider2.jpg", "slider3.jpg"],
     }),
+
+    mounted() {
+        setInterval(() => {
+            this.activeIndex++;
+            if (this.activeIndex >= this.items.length) this.activeIndex = 0;
+        }, 5000)
+    }
 }
 </script>
 

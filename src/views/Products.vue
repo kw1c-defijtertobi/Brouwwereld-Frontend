@@ -41,7 +41,7 @@
                 </div>
             </div>
         </aside>
-
+        
         <div class="products">
             <div class="product">
                 <div class="image">

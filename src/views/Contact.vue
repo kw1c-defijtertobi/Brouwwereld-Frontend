@@ -59,6 +59,7 @@
                 width: 5rem;
                 height: 1.7rem;
                 border-radius: 0.5rem;
+                font-family: $fontfamily-smalltext;
             }
             textarea {
                 height: 10rem;

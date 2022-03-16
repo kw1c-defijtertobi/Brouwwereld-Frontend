@@ -13,6 +13,11 @@
             <input type="text" id="lastname" name="lastname" placeholder="Achternaam">
             <input type="text" id="mail" name="mail" placeholder="E-mailadres">
             <textarea id="subject" name="subject" placeholder="Bericht.."></textarea>
+            <div class="newsletter-container">
+                <input type="checkbox" id="newsletter" name="newsletter" value="newsletter">
+                <label for="newsletter">Aanmelden voor nieuwsbrief.</label>
+            </div>
+            
             <input type="submit" value="Submit">
         </div>
     </div>
@@ -61,6 +66,22 @@
                 border-radius: 0.5rem;
                 font-family: $fontfamily-smalltext;
             }
+            .newsletter-container {
+                display: flex;
+                align-items: center;
+                margin-top: 1rem;
+                input[type=checkbox] {
+                    transform: scale(1.2);
+                    margin-left: 2px;
+                    accent-color: rgb(207,132,48);
+                    margin-right: 0.5rem;
+                }
+                label {
+                    font-weight: 400;
+                    font-size: 0.8rem;
+                }
+            }
+            
             textarea {
                 height: 10rem;
                 padding-top: 0.3rem;

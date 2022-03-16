@@ -22,7 +22,7 @@
             <div class="newscontainer">
                 <img src="/assets/news2.png">
                 <div class="text-block">
-                    <h3>Heineken 18 pack in de aanbieding</h3>
+                    <h3>Heineken 18 pack aanbieding</h3>
                     <p>10 Februari</p>
                 </div>
             </div>

@@ -31,4 +31,12 @@
   {
     background-color: $backgroundcolor;
   }
+
+  .title{
+    h1{
+      text-align: center;
+      color: $text-color;
+      margin: 1.5rem;
+    }
+  }
 </style>

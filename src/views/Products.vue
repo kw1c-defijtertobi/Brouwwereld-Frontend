@@ -196,6 +196,7 @@
 .productpage{
     width: 100%;
     display: flex;
+    color: $text-color;
     aside
     {
         text-align: left;

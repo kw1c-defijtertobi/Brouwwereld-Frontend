@@ -119,14 +119,6 @@
 
 <style lang="scss">
 @import "../styles/variables.scss";
-    .title {
-        h1 {
-            font-family: $fontfamily-bigtext;
-            text-align: center;
-            margin: 2rem 0 2rem 0;
-        }
-    }   
-
     .newscontainer{
         display: flex;
         flex-wrap: wrap;

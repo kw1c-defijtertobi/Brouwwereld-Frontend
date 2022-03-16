@@ -46,83 +46,80 @@
 
 <style lang="scss">
 @import "../styles/variables.scss";
-
-main{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
-    .homecontainer {
-        margin: 0 auto;
-        background-color: $backgroundcolor;
-        display: flex;
-        align-items: center;
-        padding: 0.5rem 0 2rem 0;
-        justify-content: center;
-        .slider
-        {
-            width: 35rem;
-        }
-        .hometext, .slidercontainer {
-            margin: 0 2rem 0 2rem; 
-        }
-        h1 {
-            width: 32rem;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 4rem;
-            color: $text-color;
-            text-align: left;
-            span {
-                color: rgb(207,132,48);
+    main{
+        font-family: $fontfamily-bigtext;
+        font-weight: 900;
+        .homecontainer {
+            margin: 0 auto;
+            background-color: $backgroundcolor;
+            display: flex;
+            align-items: center;
+            padding: 0.5rem 0 2rem 0;
+            justify-content: center;
+            .slider
+            {
+                width: 35rem;
+            }
+            .hometext, .slidercontainer {
+                margin: 0 2rem 0 2rem; 
+            }
+            h1 {
+                width: 32rem;
                 font-family: 'Montserrat', sans-serif;
+                font-size: 4rem;
+                color: $text-color;
+                text-align: left;
+                span {
+                    color: rgb(207,132,48);
+                    font-family: 'Montserrat', sans-serif;
+                }
             }
         }
-    }
 
-    .newstitle{
-        h2{
-            text-align: center;
-            font-size: 2rem;
-            color: $text-color; 
-            margin-top:1.5rem;
-            font-weight: 900;
+        .newstitle{
+            h2{
+                text-align: center;
+                font-size: 2rem;
+                color: $text-color; 
+                margin-top:1.5rem;
+                font-weight: 900;
+            }
         }
-    }
 
-    .news
-    {
-        font-family: $fontfamily;
-        margin: 1.5rem 0 5rem 0;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 30px;
-        padding: 0 30px 0 30px;
-        img {
-            width: 100%;
-            border-radius: 0.5rem;
-        }
-        .newscontainer
+        .news
         {
-            position: relative;
-        }
-        .text-block {
-            position: absolute;
-            width: 100%;
-            height: 50px;
-            top: 95%;
-            background-color: white;
-            color: black;
-            padding: 12px 0 0 10px;
-            background-color: rgb(235,233,230);
-            border-bottom-left-radius: 0.5rem;
-            border-bottom-right-radius: 0.5rem;       
-            font-size: 0.8rem;
-            h3:hover{
-                text-decoration: underline;
+            font-family: $fontfamily;
+            margin: 1.5rem 0 5rem 0;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            padding: 0 30px 0 30px;
+            img {
+                width: 100%;
+                border-radius: 0.5rem;
+            }
+            .newscontainer
+            {
+                position: relative;
+            }
+            .text-block {
+                position: absolute;
+                width: 100%;
+                height: 50px;
+                top: 95%;
+                background-color: white;
+                color: black;
+                padding: 12px 0 0 10px;
+                background-color: rgb(235,233,230);
+                border-bottom-left-radius: 0.5rem;
+                border-bottom-right-radius: 0.5rem;       
+                font-size: 0.8rem;
+                h3:hover{
+                    text-decoration: underline;
+                }
             }
         }
     }
-}
-
-
 </style>
 
 <script>

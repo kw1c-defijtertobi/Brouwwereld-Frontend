@@ -3,6 +3,23 @@
     <div class="newscontainer">
         <div class="newsobject">
             <img src="\assets\news1.png" alt="news1">
+            <div class="newsflex">
+                <div class="newstextblock">
+                    <h2>
+                        Korting op kratten bier deze week
+                    </h2>
+                    <p>
+                        Alle actuele bierkrat aanbiedingen. Hier vind je alle kratten bier die nu in de aanbieding zijn. Zit er op dit moment korting op jouw favoriete kratje pils? 
+                    </p>
+                </div>
+                <div class="buttonblock">
+                    <div class="button">
+                        <p>Lees meer</p>
+                    </div>
+                </div>
+            </div>
+        
+        
         </div>
         <div class="newsobject">
             <img src="\assets\news2.png" alt="news1">
@@ -35,17 +52,47 @@
         flex-wrap: wrap;
         margin: 0 2rem 0 2rem;
         .newsobject{
-            margin: 1rem;
+            margin: 0 1rem 1rem 1rem;
             flex: 30%;
-            width: 10rem;
-            height: 20rem;
-            background-color: grey;
+            height: 27rem;
             img {
-                width: 90%;
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
+                    width: 90%;
+                    margin-left: 1rem;
+                    border-radius: 0.5rem;
+                }
+            .newsflex{
+                display: flex;
+                .newstextblock {
+                    flex: 80%;
+                    margin-left: 1rem;
+                    h2 {
+                    font-weight: 500;
+                    }
+                    p {
+                        font-weight: 300;
+                    }
+                }
+                .buttonblock {
+                    flex: 20%;
+                    .button {
+                        position: relative;
+                        color: white;
+                        width: 8rem;
+                        height: 2rem;
+                        background-color: rgb(207,132,48);
+                        border-radius: 0.2rem;
+                        p {
+                            text-align: center;
+                            line-height: 2rem;
+                            
+                            
+                            
+                        }
+                    }
+                }
             }
+            
+            
         }
     }
 

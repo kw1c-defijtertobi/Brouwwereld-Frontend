@@ -19,6 +19,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+@font-face {
+    font-family: "Objectivity";
+    src: url("/assets/objectivity.bold.otf") format("opentype");
+}
+
 @import "./styles/variables.scss";
 
   * {

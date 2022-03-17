@@ -25,7 +25,7 @@
                 </p>
             </div>
             <div class="overons-photo">
-                <img src="assets\team.jpg" alt="brouwwereld">
+                <img src="\assets\team.jpg" alt="brouwwereld">
             </div>
         </div>
         

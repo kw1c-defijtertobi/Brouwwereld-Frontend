@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "vue": "^3.2.25",
+    "vue-numeric-input": "^2.0.0",
     "vue-router": "^4.0.12"
   },
   "devDependencies": {

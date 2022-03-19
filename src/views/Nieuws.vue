@@ -5,7 +5,7 @@
     
     <div class="newscontainer">
         <div class="newsobject">
-            <img src="\assets\news1.png" alt="news1">
+            <img class="newsimage" src="\assets\news1.png" alt="news1">
             <div class="newsflex">
                 <div class="newstextblock">
                     <h2>
@@ -23,7 +23,7 @@
             </div>
         </div>
         <div class="newsobject">
-            <img src="\assets\news2.png" alt="news2">
+            <img class="newsimage" src="\assets\news2.png" alt="news2">
             <div class="newsflex">
                 <div class="newstextblock">
                     <h2>
@@ -41,7 +41,7 @@
             </div>
         </div>
         <div class="newsobject">
-            <img src="\assets\news3.png" alt="news3">
+            <img class="newsimage" src="\assets\news3.png" alt="news3">
             <div class="newsflex">
                 <div class="newstextblock">
                     <h2>
@@ -59,7 +59,7 @@
             </div>
         </div>
         <div class="newsobject">
-            <img src="\assets\news4.png" alt="news4">
+            <img class="newsimage" src="\assets\news4.png" alt="news4">
             <div class="newsflex">
                 <div class="newstextblock">
                     <h2>
@@ -77,7 +77,7 @@
             </div>
         </div>
         <div class="newsobject">
-            <img src="\assets\news6.png" alt="news6">
+            <img class="newsimage" src="\assets\news6.png" alt="news6">
             <div class="newsflex">
                 <div class="newstextblock">
                     <h2>
@@ -95,7 +95,7 @@
             </div>
         </div>
         <div class="newsobject">
-            <img src="\assets\news5.png" alt="news5">
+            <img class="newsimage" src="\assets\news5.png" alt="news5">
             <div class="newsflex">
                 <div class="newstextblock">
                     <h2>
@@ -127,11 +127,11 @@
             margin: 0 1rem 1rem 1rem;
             flex: 30%;
             height: 27rem;
-            img {
-                    width: 90%;
-                    margin-left: 1rem;
-                    border-radius: 0.5rem;
-                }
+            .newsimage {
+                width: 90%;
+                margin-left: 1rem;
+                border-radius: 0.5rem;
+            }
             .newsflex{
                 margin-left: 1rem;
                 .newstextblock {

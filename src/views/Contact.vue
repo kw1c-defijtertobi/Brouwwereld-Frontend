@@ -11,7 +11,7 @@
         <div class="mail-container">
             <input type="text" id="firstname" name="firstname" placeholder="Voornaam">
             <input type="text" id="lastname" name="lastname" placeholder="Achternaam">
-            <input type="text" id="mail" name="mail" placeholder="E-mailadres">
+            <input type="email" id="mail" name="mail" placeholder="E-mailadres">
             <textarea id="subject" name="subject" placeholder="Bericht.."></textarea>
             <div class="newsletter-container">
                 <input type="checkbox" id="newsletter" name="newsletter" value="newsletter">
@@ -42,7 +42,7 @@
             margin-right: auto;
             grid-column-start: 2;
             margin-top: 1rem;
-            input[type=text], textarea {
+            input[type=text], textarea, input[type=email] {
                 display: block;
                 font-family: $fontfamily-smalltext;
                 width: 15rem;
@@ -51,7 +51,7 @@
                 padding-left: 0.5rem;
                 border: 1px solid rgb(215,213,210);
             }
-            input[type=text]:not(:first-child), textarea {
+            input[type=text]:not(:first-child), textarea, input[type=email] {
                 margin-top: 1rem;
             }
             input[type=submit] {

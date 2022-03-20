@@ -10,9 +10,16 @@
   </div>
 </template>
 
-<script setup lang="ts">
-  import Navigation from "./components/Navigation.vue";
-  import Footer from "./components/Footer.vue";
+<script lang="ts">
+import Navigation from "./components/Navigation.vue";
+import Footer from "./components/Footer.vue";
+
+export default {
+  components: {
+    Navigation,
+    Footer
+  }
+}
 </script>
 
 <style lang="scss">
@@ -26,22 +33,31 @@
 
 @import "./styles/variables.scss";
 
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  .backgroundcolor
+#app {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.backgroundcolor
+{
+  background-color: $backgroundcolor;
+}
+
+.title 
+{
+  h1
   {
-    background-color: $backgroundcolor;
+    text-align: center;
+    color: $text-color;
+    margin: 1.5rem;
   }
-
-  .title{
-    h1{
-      text-align: center;
-      color: $text-color;
-      margin: 1.5rem;
-    }
-  }
+}
 </style>

@@ -43,146 +43,20 @@
         </aside>
         
         <div class="products">
-            <div class="product">
+            <div class="product" v-for="product in products" :key="product.id">
                 <div class="image">
-                    <img src="\assets\product1.png" alt="product1">
+                    <img :src="`/assets/${ product.image }`" :alt="product.name">
                 </div>
                 <div class="info">
                     <div class="productinfo">
                         <div class="price">
-                            <span>1.</span>
-                            <sup>49</sup>
+                            <span>{{ product.price.toString().split(".")[0] }}.</span>
+                            <sup>{{ product.price.toString().split(".")[1] }}<span v-if="product.price.toString().split('.')[1].length < 2">0</span></sup>
                         </div>
-                        <p>Hertog Jan</p>
-                        <strong>Lentebock</strong>
+                        <p>{{ product.name }}</p>
+                        <strong>{{ product.type }}</strong>
                     </div>
-                    <div class="cart">
-                        <svg class="cart-logo" fill="white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.53 7l-.564 2h-15.127l-.839-2h16.53zm-14.013 6h12.319l.564-2h-13.722l.839 2zm5.983 5c-.828 0-1.5.672-1.5 1.5 0 .829.672 1.5 1.5 1.5s1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm11.305-15l-3.432 12h-13.017l.839 2h13.659l3.474-12h1.929l.743-2h-4.195zm-6.305 15c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5z"/></svg>
-                    </div>
-                </div>
-            </div>
-            <div class="product">
-                <div class="image">
-                    <img src="\assets\product2.png" alt="product2">
-                </div>
-                <div class="info">
-                    <div class="productinfo">
-                        <div class="price">
-                            <span>1.</span>
-                            <sup>30</sup>
-                        </div>
-                        <p>Hertog Jan</p>
-                        <strong>Bockbier</strong>
-                    </div>
-                    <div class="cart">
-                        <svg class="cart-logo" fill="white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.53 7l-.564 2h-15.127l-.839-2h16.53zm-14.013 6h12.319l.564-2h-13.722l.839 2zm5.983 5c-.828 0-1.5.672-1.5 1.5 0 .829.672 1.5 1.5 1.5s1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm11.305-15l-3.432 12h-13.017l.839 2h13.659l3.474-12h1.929l.743-2h-4.195zm-6.305 15c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5z"/></svg>
-                    </div>
-                </div>
-            </div>
-            <div class="product">
-                <div class="image">
-                    <img src="\assets\product3.png" alt="product3">
-                </div>
-                <div class="info">
-                    <div class="productinfo">
-                        <div class="price">
-                            <span>1.</span>
-                            <sup>49</sup>
-                        </div>
-                        <p>Hertog Jan</p>
-                        <strong>Karakter</strong>
-                    </div>
-                    <div class="cart">
-                        <svg class="cart-logo" fill="white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.53 7l-.564 2h-15.127l-.839-2h16.53zm-14.013 6h12.319l.564-2h-13.722l.839 2zm5.983 5c-.828 0-1.5.672-1.5 1.5 0 .829.672 1.5 1.5 1.5s1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm11.305-15l-3.432 12h-13.017l.839 2h13.659l3.474-12h1.929l.743-2h-4.195zm-6.305 15c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5z"/></svg>
-                    </div>
-                </div>
-            </div>
-            <div class="product">
-                <div class="image">
-                    <img src="\assets\product4.png" alt="product4">
-                </div>
-                <div class="info">
-                    <div class="productinfo">
-                        <div class="price">
-                            <span>2.</span>
-                            <sup>10</sup>
-                        </div>
-                        <p>Leffe</p>
-                        <strong>Tripel-Tripel</strong>
-                    </div>
-                    <div class="cart">
-                        <svg class="cart-logo" fill="white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.53 7l-.564 2h-15.127l-.839-2h16.53zm-14.013 6h12.319l.564-2h-13.722l.839 2zm5.983 5c-.828 0-1.5.672-1.5 1.5 0 .829.672 1.5 1.5 1.5s1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm11.305-15l-3.432 12h-13.017l.839 2h13.659l3.474-12h1.929l.743-2h-4.195zm-6.305 15c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5z"/></svg>
-                    </div>
-                </div>
-            </div>
-            <div class="product">
-                <div class="image">
-                    <img src="\assets\product5.png" alt="product5">
-                </div>
-                <div class="info">
-                    <div class="productinfo">
-                        <div class="price">
-                            <span>1.</span>
-                            <sup>75</sup>
-                        </div>
-                        <p>La Chouffe</p>
-                        <strong>Blonde blond</strong>
-                    </div>
-                    <div class="cart">
-                        <svg class="cart-logo" fill="white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.53 7l-.564 2h-15.127l-.839-2h16.53zm-14.013 6h12.319l.564-2h-13.722l.839 2zm5.983 5c-.828 0-1.5.672-1.5 1.5 0 .829.672 1.5 1.5 1.5s1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm11.305-15l-3.432 12h-13.017l.839 2h13.659l3.474-12h1.929l.743-2h-4.195zm-6.305 15c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5z"/></svg>
-                    </div>
-                </div>
-            </div>
-            <div class="product">
-                <div class="image">
-                    <img src="\assets\product6.png" alt="product6">
-                </div>
-                <div class="info">
-                    <div class="productinfo">
-                        <div class="price">
-                            <span>1.</span>
-                            <sup>69</sup>
-                        </div>
-                        <p>Apple Bandit</p>
-                        <strong>Cider</strong>
-                    </div>
-                    <div class="cart">
-                        <svg class="cart-logo" fill="white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.53 7l-.564 2h-15.127l-.839-2h16.53zm-14.013 6h12.319l.564-2h-13.722l.839 2zm5.983 5c-.828 0-1.5.672-1.5 1.5 0 .829.672 1.5 1.5 1.5s1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm11.305-15l-3.432 12h-13.017l.839 2h13.659l3.474-12h1.929l.743-2h-4.195zm-6.305 15c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5z"/></svg>
-                    </div>
-                </div>
-            </div>
-            <div class="product">
-                <div class="image">
-                    <img src="\assets\product7.png" alt="product7">
-                </div>
-                <div class="info">
-                    <div class="productinfo">
-                        <div class="price">
-                            <span>1.</span>
-                            <sup>79</sup>
-                        </div>
-                        <p>La Trappe</p>
-                        <strong>Dubbel</strong>
-                    </div>
-                    <div class="cart">
-                        <svg class="cart-logo" fill="white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.53 7l-.564 2h-15.127l-.839-2h16.53zm-14.013 6h12.319l.564-2h-13.722l.839 2zm5.983 5c-.828 0-1.5.672-1.5 1.5 0 .829.672 1.5 1.5 1.5s1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm11.305-15l-3.432 12h-13.017l.839 2h13.659l3.474-12h1.929l.743-2h-4.195zm-6.305 15c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5z"/></svg>
-                    </div>
-                </div>
-            </div>
-            <div class="product">
-                <div class="image">
-                    <img src="\assets\product8.png" alt="product8">
-                </div>
-                <div class="info">
-                    <div class="productinfo">
-                        <div class="price">
-                            <span>1.</span>
-                            <sup>99</sup>
-                        </div>
-                        <p>Texels</p>
-                        <strong>Skuumkoppe</strong>
-                    </div>
-                    <div class="cart">
+                    <div @click="addItemToCart(product.id)" class="cart">
                         <svg class="cart-logo" fill="white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.53 7l-.564 2h-15.127l-.839-2h16.53zm-14.013 6h12.319l.564-2h-13.722l.839 2zm5.983 5c-.828 0-1.5.672-1.5 1.5 0 .829.672 1.5 1.5 1.5s1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm11.305-15l-3.432 12h-13.017l.839 2h13.659l3.474-12h1.929l.743-2h-4.195zm-6.305 15c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5z"/></svg>
                     </div>
                 </div>
@@ -190,6 +64,25 @@
         </div>
     </main>
 </template>
+
+<script>
+import { products } from "../data/products";
+import { cart } from "../data/cart";
+
+export default {
+    data: () => ({
+        products
+    }),
+
+    methods: {
+        addItemToCart(id) {
+            const previous = cart.value.find((item) => item.id === id);
+            if (previous) previous.amount++;
+            else cart.value.push({ id, amount: 1 })
+        }
+    }
+}
+</script>
 
 <style lang="scss">
 @import "../styles/variables.scss";

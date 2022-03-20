@@ -6,12 +6,15 @@
         <div class="product-container">
             <div v-for="product in cart" :key="product.id" class="product-row">
                 <img :src="`/assets/${ productById(product.id).image }`" alt="product1">
-                <p>{{ productById(product.id).name }} <span>{{ productById(product.id).type }}</span></p>
-                <div class="product-counter">
-                    <div class="product-counter-button" @click="product.amount--">-</div>
-                    <input v-model="product.amount" type="number" min="1" >
-                    <div class="product-counter-button" @click="product.amount++">+</div>
+                <div class="product-name-counter">
+                    <p>{{ productById(product.id).name }} <span>{{ productById(product.id).type }}</span></p>
+                    <div class="product-counter">
+                        <div class="product-counter-button" @click="product.amount--">-</div>
+                        <input v-model="product.amount" type="number" min="1" >
+                        <div class="product-counter-button" @click="product.amount++">+</div>
+                    </div>
                 </div>
+                
                 <div class="total-product-price">
                     <p>&euro;{{ (productById(product.id).price * product.amount).toFixed(2) }}</p>
                 </div>
@@ -94,16 +97,19 @@ export default {
                     margin-left: 7.5rem;
                 }
                 p {
-                    margin-left: 3rem;
                     font-weight: 400;
                     span {
                         font-weight: 900;
                     }
                 }
+                .product-name-counter
+                {
+                    margin-left: 3rem;
+                }
                 .product-counter {
                     display: flex;
                     align-items: center;
-                    
+                    margin-top: 0.5rem;
                     input::-webkit-outer-spin-button,
                     input::-webkit-inner-spin-button {
                         -webkit-appearance: none;
@@ -113,6 +119,7 @@ export default {
                         width: 25px;
                         height: 25px;
                         text-align:center;
+                        margin: 0 0.5rem;
                     }
                     .product-counter-button {
                         width: 25px;
@@ -122,7 +129,7 @@ export default {
                         background-color: rgb(207,132,48);
                         color: white;
                         border-radius: 0.1rem;
-                        margin: 0.5rem;
+                        cursor: pointer;
                     }
                 }
                 .total-product-price {

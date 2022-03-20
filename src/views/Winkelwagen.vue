@@ -7,13 +7,13 @@
             <div v-for="product in cart" :key="product.id" class="product-row">
                 <img :src="`/assets/${ productById(product.id).image }`" alt="product1">
                 <p>{{ productById(product.id).name }} <span>{{ productById(product.id).type }}</span></p>
+                <div class="product-counter">
+                    <div class="product-counter-button" @click="product.amount--">-</div>
+                    <input v-model="product.amount" type="number" min="1" >
+                    <div class="product-counter-button" @click="product.amount++">+</div>
+                </div>
                 <div class="total-product-price">
                     <p>&euro;{{ (productById(product.id).price * product.amount).toFixed(2) }}</p>
-                </div>
-                <div>
-                    <div @click="product.amount--">-</div>
-                    <input v-model="product.amount" type="number" min="1" >
-                    <div @click="product.amount++">+</div>
                 </div>
             </div>
         </div>
@@ -98,6 +98,31 @@ export default {
                     font-weight: 400;
                     span {
                         font-weight: 900;
+                    }
+                }
+                .product-counter {
+                    display: flex;
+                    align-items: center;
+                    
+                    input::-webkit-outer-spin-button,
+                    input::-webkit-inner-spin-button {
+                        -webkit-appearance: none;
+                        margin: 0;
+                    }
+                    input[type=number] {
+                        width: 25px;
+                        height: 25px;
+                        text-align:center;
+                    }
+                    .product-counter-button {
+                        width: 25px;
+                        height: 25px;
+                        padding-top: 2px;
+                        text-align: center;
+                        background-color: rgb(207,132,48);
+                        color: white;
+                        border-radius: 0.1rem;
+                        margin: 0.5rem;
                     }
                 }
                 .total-product-price {

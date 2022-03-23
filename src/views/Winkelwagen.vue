@@ -36,7 +36,7 @@
                 </div>
                 <div class="calc-text-row">
                     <p class="calc-text-text">BTW</p>
-                    <p class="calc-text-price">&euro;{{ ((totalPrice + statiegeld) * 0.21).toFixed(2) }}</p>
+                    <p class="calc-text-price">&euro;{{ ((totalPrice + statiegeld) / 121 * 21).toFixed(2) }}</p>
                 </div>
                 <input type="submit" value="Betalen">
                 <div class="cart-promotion-text">
